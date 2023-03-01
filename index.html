@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Mosaic Design MI Dynamic Product Code Generator 1B</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <span>Mosaic Design MI Dynamic Product Code Generator 1B</span>
+    </nav>
+  </header>
+  <table width="100%">
+    <tr>
+      <td width="35%" style="vertical-align: top;">
+        <div class="enterForm">
+          <p>Enter Copied Text from MI Clipboard:</p>
+          <textarea rows="15" cols="80" id="copiedMI"></textarea><br /><br />
+          <button id="launch">Output Code</button><br />
+        </div>
+      </td>
+      <td width="65%" style="vertical-align: top;">
+        <p>Generated Code for SFMC:</p>
+        <div class="output">
+          <textarea rows="30" cols="80" id="formatted"></textarea>
+        </div>
+      </td>
+    </tr>
+  </table>
+</body>
+
+<script type="text/javascript">
+  var string = ``;
+  var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&#\/%?=~_|!:,.;()@]*[-A-Z0-9+&@#\/%=~_|])/ig;
+  var miList, headlineHref, headlineImgSrc, p1Href, p1ImgSrc, p2Href, p2ImgSrc, p3Href, p3ImgSrc, p4Href, p4ImgSrc, p5Href, p5ImgSrc, p6Href, p6ImgSrc, p7Href, p7ImgSrc, p8Href, p8ImgSrc, p9Href, p9ImgSrc, shopNowHref, shopNowImgSrc
+
+  var formatted = document.querySelector("#formatted");
+  var launch = document.querySelector("#launch");
+  if (launch) {
+    launch.addEventListener("click", writeHTML, false);
+  }
+
+  function writeHTML() {
+    // reset
+    document.getElementById("formatted").innerHTML = "";
+    var miList = [];
+
+    // get MI URLs and remove the last Campaign Tracking Pixel URL from constructed miList Array
+    var string = document.getElementById("copiedMI").value;
+    var miList = string.match(urlRegex);
+    miList.pop();
+
+    var headlineHref = miList[miList.length - 22];
+    var headlineImgSrc = miList[miList.length - 21];
+    var p1Href = miList[miList.length - 20];
+    var p1ImgSrc = miList[miList.length - 19];
+    var p2Href = miList[miList.length - 18];
+    var p2ImgSrc = miList[miList.length - 17];
+    var p3Href = miList[miList.length - 16];
+    var p3ImgSrc = miList[miList.length - 15];
+    var p4Href = miList[miList.length - 14];
+    var p4ImgSrc = miList[miList.length - 13];
+    var p5Href = miList[miList.length - 12];
+    var p5ImgSrc = miList[miList.length - 11];
+    var p6Href = miList[miList.length - 10];
+    var p6ImgSrc = miList[miList.length - 9];
+    var p7Href = miList[miList.length - 8];
+    var p7ImgSrc = miList[miList.length - 7];
+    var p8Href = miList[miList.length - 6];
+    var p8ImgSrc = miList[miList.length - 5];
+    var p9Href = miList[miList.length - 4];
+    var p9ImgSrc = miList[miList.length - 3];
+    var shopNowHref = miList[miList.length - 2];
+    var shopNowImgSrc = miList[miList.length - 1];
+
+    var copyStory = "";
+
+    copyStory += "<table class=\"wrapper\" width=\"640\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\"> \n"
+    copyStory += "  <tbody> \n"
+    copyStory += "    <tr> \n"
+    copyStory += "      <td> \n"
+    copyStory += "        <a href=\"" + headlineHref + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + headlineImgSrc + "\" class=\"photo\" width=\"640\" /></a> \n"
+    copyStory += "      </td> \n"
+    copyStory += "    </tr> \n"
+
+    copyStory += "    <tr> \n"
+    copyStory += "      <td> \n"
+    copyStory += "        <a href=\"" + p1Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p1ImgSrc + "\" class=\"photo\" width=\"640\" /></a> \n"
+    copyStory += "      </td> \n"
+    copyStory += "    </tr> \n"
+
+    copyStory += "    <tr> \n"
+    copyStory += "      <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\"> \n"
+    copyStory += "          <tr> \n"
+    copyStory += "            <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "              <a href=\"" + p2Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p2ImgSrc + "\" class=\"photo\" width=\"420\" /></a> \n"
+    copyStory += "            </td> \n"
+    copyStory += "            <td> \n"
+    copyStory += "              <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\"> \n"
+    copyStory += "                <tr> \n"
+    copyStory += "                  <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "                    <a href=\"" + p3Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p3ImgSrc + "\" class=\"photo\" width=\"220\" /></a> \n"
+    copyStory += "                  </td> \n"
+    copyStory += "                 </tr> \n"
+    copyStory += "                <tr> \n"
+    copyStory += "                  <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "                    <a href=\"" + p4Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p4ImgSrc + "\" class=\"photo\" width=\"220\" /></a> \n"
+    copyStory += "                  </td> \n"
+    copyStory += "                </tr> \n"
+    copyStory += "              </table> \n"
+    copyStory += "            </td> \n"
+    copyStory += "          </tr> \n"
+    copyStory += "        </table> \n"
+    copyStory += "      </td> \n"
+    copyStory += "    </tr> \n"
+
+    copyStory += "    <tr> \n"
+    copyStory += "      <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "        <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\"> \n"
+    copyStory += "          <tr> \n"
+    copyStory += "            <td valign=\"top\"> \n"
+    copyStory += "              <table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" align=\"center\"> \n"
+    copyStory += "                <tr> \n"
+    copyStory += "                  <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "                    <a href=\"" + p5Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p4ImgSrc + "\" class=\"photo\" width=\"220\" /></a> \n"
+    copyStory += "                  </td> \n"
+    copyStory += "                </tr> \n"
+    copyStory += "                <tr> \n"
+    copyStory += "                  <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "                    <a href=\"" + p6Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p6ImgSrc + "\" class=\"photo\" width=\"220\" /></a> \n"
+    copyStory += "                  </td> \n"
+    copyStory += "                </tr> \n"
+    copyStory += "              </table> \n"
+    copyStory += "            </td> \n"
+    copyStory += "            <td valign=\"top\"> \n"
+    copyStory += "              <a href=\"" + p7Href + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + p7ImgSrc + "\" class=\"photo\" width=\"420\" /></a> \n"
+    copyStory += "            </td> \n"
+    copyStory += "          </tr> \n"
+    copyStory += "        </table> \n"
+    copyStory += "      </td> \n"
+    copyStory += "    </tr> \n"
+
+    copyStory += "    <tr> \n"
+    copyStory += "      <td valign=\"top\" align=\"center\"> \n"
+    copyStory += "        <a href=\"" + shopNowHref + "\" style=\"display: block\" target=\"_blank\" alias=\"%%=v(@alias)=%%\"><img alt=\"Display images to show real-time content\" style=\"border: 0; display: block;\" border=\"0\" src=\"" + shopNowImgSrc + "\" class=\"photo\" width=\"640\" /></a> \n"
+    copyStory += "      </td> \n"
+    copyStory += "    </tr> \n"
+    copyStory += "  </tbody> \n"
+    copyStory += "</table> \n"
+
+    formatted.innerHTML = copyStory;
+  }
+</script>
+
+</html>
